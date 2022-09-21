@@ -84,9 +84,6 @@ const Header = ({ logo }) => {
                                 <i className="bi bi-x-circle"></i>
                             </li>
                         </ul>
-                        <button className="nav__action nav__action--search">
-                            <i className="bi bi-search"></i>
-                        </button>
                     </div>
                 </nav>
             </header >
