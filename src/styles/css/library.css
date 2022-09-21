@@ -224,6 +224,7 @@
   font-size: 1.25rem;
   border: 1px solid var(--tertiary-theme-color);
   transform: scale(0.9);
+  transition: all 0.25s ease-in-out;
 }
 .button-text:hover {
   background: white;
@@ -438,6 +439,7 @@
   font-size: 1rem;
   padding-top: 1rem;
   padding-bottom: 0.25rem;
+  transition: all 0.25s ease-in-out;
 }
 .footer__sub-menu {
   display: flex;
@@ -511,6 +513,7 @@
   font-size: 1rem;
   width: 100%;
   background-color: none;
+  transition: all 0.25s ease-in-out;
 }
 .header--scroll {
   background-color: var(--tertiary-theme-color);
@@ -544,6 +547,7 @@
   top: calc(var(--pading-nav) + 0.5rem);
   right: var(--padding-container);
   transition: top 0.25s, right 0.25s;
+  cursor: pointer;
 }
 .nav__action--search {
   position: absolute;
@@ -559,10 +563,10 @@
     --scale-close: scale(0;) ;
   }
   .nav__action--menu {
-    transform: scale(0);
+    display: none;
   }
   .nav__action--close {
-    transform: scale(0);
+    display: none;
   }
   .nav__action--search {
     position: initial;
@@ -708,8 +712,8 @@
 }
 .section__featured {
   padding: 0;
-  background-color: var(--primary-theme-color);
   width: 100%;
+  transition: all 0.25s;
 }
 .section__featured-titles {
   display: flex;
@@ -1022,38 +1026,42 @@
   }
 }
 .switch {
-  background-color: #343D5B;
+  z-index: 30;
+  background-color: var(--tertiary-theme-color);
   border-radius: 1000px;
   border: none;
-  position: relative;
   cursor: pointer;
   display: flex;
+  align-items: center;
+  justify-content: center;
   outline: none;
+  position: fixed;
+  right: 3%;
+  bottom: 8%;
+  font-size: 2rem;
+  width: 64px;
+  height: 64px;
+}
+.switch:hover {
+  filter: brightness(85%);
 }
 
-.switch::after {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  background: #F1F1F1;
-  top: 0;
-  left: 0;
-  right: unset;
-  border-radius: 100px;
-  transition: 0.3s ease all;
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+.icon {
+  --visibility-sun: none;
+  --visibility-moon: contents;
+  color: white;
 }
-
-.switch.active {
-  background-color: white;
-  color: #000;
+.icon__sun {
+  display: var(--visibility-sun);
 }
-
-.switch.active::after {
-  right: 0;
-  left: unset;
+.icon__sun--toggle {
+  --visibility-sun: contents;
+}
+.icon__moon {
+  display: var(--visibility-moon);
+}
+.icon__moon--toggle {
+  --visibility-moon: none;
 }
 
 .nav_span {

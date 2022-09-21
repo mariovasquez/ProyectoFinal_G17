@@ -6,6 +6,7 @@
     font-size: 1rem;
     width: 100%;
     background-color: none;
+    transition: all 0.25s ease-in-out;
 
     &--scroll {
         background-color: var(--tertiary-theme-color);
@@ -44,6 +45,7 @@
             top: calc(var(--pading-nav) + 0.5rem);
             right: var(--padding-container);
             transition: top 0.25s, right 0.25s;
+            cursor: pointer;
         }
 
         &--search{
@@ -64,11 +66,13 @@
 
         &__action{
             &--menu{
-                transform: scale(0);
+                // transform: scale(0);
+                display: none;
             }
             
             &--close{
-                transform: scale(0);
+                // transform: scale(0);
+                display: none;
             }
 
             &--search{

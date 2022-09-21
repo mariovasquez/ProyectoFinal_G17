@@ -15,13 +15,12 @@
 
     &--slider{
         width: 100%;
-        // height: 100vh;
     }
 
     &__featured{
         padding: 0;
-        background-color: var(--primary-theme-color);
         width: 100%;
+        transition: all 0.25s;
 
         &-titles{
             display: flex;
@@ -212,9 +211,6 @@
 
     .section{
 
-        &--slider{
-            // height: 100vh;
-        }
         &__featured{
             padding: 4rem 0;
 
