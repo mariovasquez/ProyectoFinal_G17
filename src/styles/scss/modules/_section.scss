@@ -1,0 +1,269 @@
+.section{
+    // padding: var(--padding-section) 0;
+    // background-color: var(--primary-theme-color);
+    overflow: hidden;
+    
+    &--about{
+        display: flex;
+        flex-direction: column;
+        padding-top: 7rem;
+        align-items: center;
+        animation: fadeBackground 6s infinite ;
+        background-color: var(--tertiary-shadow-color);
+        max-width: 100%;
+    }
+
+    &--slider{
+        width: 100%;
+        // height: 100vh;
+    }
+
+    &__featured{
+        padding: 0;
+        background-color: var(--primary-theme-color);
+        width: 100%;
+
+        &-titles{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem 0;
+        }
+
+        &-title{
+            position: relative;
+            color: var(--primary-shadow-color);
+            font-size: 1.25rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s;
+
+            &:hover{
+                text-shadow: 0 0 0.125rem var(--primary-shadow-color);
+            }
+    
+            &--selected{
+                position: relative;
+                color: var(--primary-text-color);
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -0.5rem;
+                    width: 100%;
+                    height: 0.325rem;
+                    background-color: var(--tertiary-theme-color);
+                    transition: all 0.25s ease-in-out;
+                }
+            }
+        }
+
+        &-albums{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 2rem 0;
+            gap: 2.5rem;
+
+            &--disabled{
+                display: none;
+            }
+        }
+
+        &-album{
+
+            &-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 0.5rem;
+                padding: 1rem 0rem;
+                // max-width: 240px;
+                transition: transform 0.25s ease-in-out;
+                --border-color: transparent;
+            }
+
+            &-link{
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: var(--primary-text-color);
+                align-items: center;
+                gap: 0.625rem;
+
+                &:hover{
+                    color: var(--primary-text-color);
+                }
+            }
+
+            &-img{
+                border-radius: 10%;
+                box-shadow: 0 0 0.25rem 0 var(--primary-shadow-color);
+                transition: all 0.25s;
+                box-shadow: 0 0 0.0625rem 0.25rem var(--border-color);
+
+            }
+            &-artist{
+                margin: 0;
+                font-weight: 800;
+                font-size: 1.25rem;
+            }
+            &-title{
+                margin: 0;
+                font-weight: 400;
+                font-size: 1.25rem;
+                color: var(--tertiary-theme-color);
+            }
+        }
+    }
+
+}
+
+.container {
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding-left: var(--padding-container);
+    padding-right: var(--padding-container);
+
+    &--nav-r {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: var(--max-width-container);
+    }
+    
+    &--submenu{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    &--cards{
+        padding: 0;
+        margin-top: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primary-theme-color);
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    &--featured{
+        max-width: calc(var(--max-width-container) + 4rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &-albums{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            // gap: 3rem;
+            width: 250px;
+
+            &-disabled{
+                display: none;
+            }
+        }
+    }
+
+    &__news{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 3rem;
+
+        &-title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 2rem;
+        }
+    }
+    
+    &__new{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        justify-content: center;
+        max-width: 450px;
+        padding: 1.5rem 0;
+        gap: 0.125rem;
+
+        &-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media(min-width: 850px){
+
+    .section{
+
+        &--slider{
+            // height: 100vh;
+        }
+        &__featured{
+            padding: 4rem 0;
+
+            &-titles{
+                gap: 2rem;
+            }
+            
+            &-title{
+                font-size: 1.5rem;
+            }
+
+            &-album{
+                &-link{
+                    gap: 1rem;
+                }
+
+                &-container{
+                    padding: 2rem 0;
+
+                    &:hover{
+                        transform: scale(1.075);
+                        --border-color: var(--primary-highlight-color);
+                    }
+                }
+            }
+        }
+    }
+
+    .container{
+        &--hero{
+            flex-direction: row;
+        }
+    
+        &--submenu{
+            flex-direction: row;
+        }
+
+        &--featured{
+    
+            &-albums{
+                width: 100%;
+            }
+        }
+    }
+    
+}
+
+@media(min-width: 1120px){
+    .section__featured-albums{
+        flex-direction: row;
+    }
+}

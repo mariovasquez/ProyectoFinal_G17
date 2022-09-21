@@ -1,0 +1,36 @@
+@keyframes scaleElement{
+    0% {scale: 1;}
+    50% {scale: 1.25;}
+    100% {scale: 1;}
+}
+
+@keyframes scaleElement-s{
+    0% {scale: 1;}
+    50% {scale: 1.03;}
+    100% {scale: 1;}
+}
+
+@keyframes scaleElement-s-uneven{
+    0% {scale: 1.03;}
+    50% {scale: 1;}
+    100% {scale: 1.03;}
+}
+
+@keyframes translate{
+    0% {transform: translateY(3px);}
+    50% {transform: translateY(-6px);}
+    100% {transform: translateY(3px);}
+}
+
+@keyframes rotate{
+    0% {transform: rotate(0);}
+    33% {transform: rotate(3deg);}
+    66% {transform: rotate(-3deg);}
+    100% {transform: rotate(0);}
+}
+
+@keyframes fadeBackground {
+    0%   { background: var(--secondary-highlight-color); }
+    50%  { background: var(--tertiary-highlight-color);  }
+    100%  { background: var(--secondary-highlight-color);  }
+}

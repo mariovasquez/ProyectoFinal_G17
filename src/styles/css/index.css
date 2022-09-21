@@ -1,0 +1,20 @@
+.body {
+  background-color: var(--primary-theme-color);
+  color: var(--primary-text-color);
+  font-family: var(--primary-font-family);
+  margin: 0;
+}
+.body--dark {
+  --tertiary-theme-color: #FF0039;
+  --quaternary-theme-color: #ff0037b7;
+  --primary-theme-color: #08080B;
+  --secondary-theme-color: #1F222B;
+  --primary-text-color: #fff;
+  --tertiary-text-color: #000;
+  --primary-shadow-color: #bbb9b9cd;
+  --primary-highlight-color: #ff0099;
+  --secondary-highlight-color: #340202;
+  --tertiary-highlight-color: #630316;
+}
+
+/*# sourceMappingURL=index.css.map */
