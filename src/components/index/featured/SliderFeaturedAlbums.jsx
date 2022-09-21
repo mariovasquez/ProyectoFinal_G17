@@ -4,8 +4,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { BrowserRouter, Routes, Link, Route } from "react-router-dom";
 import SliderAlbum from './SliderAlbum';
-const SliderNewReleasesAlbums = ({albums}) => {
+const SliderNewReleasesAlbums = ({ albums }) => {
 
     return (
         <>
@@ -33,12 +34,14 @@ const SliderNewReleasesAlbums = ({albums}) => {
                         albums.map((element, index) => (
                             <SwiperSlide>
                                 <div className="section__featured-album-container" data-key={index}>
-                                    <SliderAlbum
-                                        id={index}
-                                        urlImage={element.image_url}
-                                        artist={element.artist}
-                                        album={element.title}
-                                    />
+                                    <Link to={`/album/${element.id}`}>
+                                        <SliderAlbum
+                                            id={element.id}
+                                            urlImage={element.image_url}
+                                            artist={element.artist}
+                                            album={element.title}
+                                        />
+                                    </Link>
                                 </div>
                             </SwiperSlide>
                         ))

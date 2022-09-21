@@ -18,6 +18,7 @@ function App() {
             <Route index element={<IndexPage/>}></Route>
             <Route path="about" element={<AboutPage />} />
             <Route path="contact" element={<ContactPage />} />
+            <Route path="album" />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>

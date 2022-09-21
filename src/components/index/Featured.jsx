@@ -29,25 +29,15 @@ const Featured = () => {
     const [popularAlbumsData, setPopularAlbumsData] = useState([]);
 
     useEffect(() => {
-        getNewReleasesAlbumsData("https://raw.githubusercontent.com/mariovasquez/Reto4_G17_React/develop/src/json/newReleasesAlbums.json");
-        getPopularAlbumsData("https://raw.githubusercontent.com/mariovasquez/Reto4_G17_React/develop/src/json/popularAlbums.json");
+        getAlbumsData("https://raw.githubusercontent.com/mariovasquez/ProyectoFinal_G17/develop/src/json/albums.json");
     }, [])
 
-    const getNewReleasesAlbumsData = async (url) => {
+    const getAlbumsData = async (url) => {
         try {
             const response = await fetch(url);
             const data = await response.json();
-            setNewReleasesAlbumsData(data);
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
-    const getPopularAlbumsData = async (url) => {
-        try {
-            const response = await fetch(url);
-            const data = await response.json();
-            setPopularAlbumsData(data);
+            setPopularAlbumsData(data.popular);
+            setNewReleasesAlbumsData(data.newReleases);
         } catch (error) {
             console.log(error);
         }

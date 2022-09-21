@@ -1,0 +1,102 @@
+{
+    "newReleases": [
+        {
+            "id": 1,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/radiohead-kid-a-sister-ray_480x.jpg?v=1570377516",
+            "artist": "Radiohead",
+            "title": "Kid A"
+        },
+        {
+            "id": 2,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/oasis20000000170887_2_480x.jpg?v=1657700137",
+            "artist": "Oasis",
+            "title": "Be Here Now"
+        },
+        {
+            "id": 3,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Parachutes-1593635064_480x.jpg?v=1594732369",
+            "artist": "Coldplay",
+            "title": "Parachutes"
+        },
+        {
+            "id": 4,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Keane_Strangeland_360x.jpg?v=1654791292",
+            "artist": "Keane",
+            "title": "Strangeland"
+        },
+        {
+            "id": 5,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Homework_Daft_Punk_480x.jpg?v=1576252617",
+            "artist": "Daft Punk",
+            "title": "Homework"
+        },
+        {
+            "id": 6,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Gorillaz-RSDStoresExclNeonPurpleVinyl_e3cf8afa-e142-47d0-a188-5d9b6acf4a36_720x.png?v=1661958601",
+            "artist": "Gorillaz",
+            "title": "Craker Island"
+        },
+        {
+            "id": 7,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/themarsvoltafrancesthemute_240x.jpg?v=1636978461",
+            "artist": "The Mars Volta",
+            "title": "Frances the Mute"
+        },
+        {
+            "id": 8,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Interpol-Antics-Sister-Ray_480x.jpg?v=1570375922",
+            "artist": "Interpol",
+            "title": "Antics"
+        }
+    ],
+    "popular": [
+        {
+            "id": 9,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/MUS000356486_480x.jpg?v=1612541904",
+            "artist": "Blur",
+            "title": "Blur"
+        },
+        {
+            "id": 10,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/gorillaz-demon-days-sister-ray_240x.jpg?v=1570377287",
+            "artist": "Gorillaz",
+            "title": "Demon Days"
+        },
+        {
+            "id": 11,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/room_480x.jpg?v=1632999315",
+            "artist": "The Strokes",
+            "title": "Room On Fire"
+        },
+        {
+            "id": 12,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Arctic-Monkeys-AM-Sister-Ray_480x.jpg?v=1570377553",
+            "artist": "Artic Monkeys",
+            "title": "AM"
+        },
+        {
+            "id": 13,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/61Ms7wveh3L_480x.jpg?v=1592399218",
+            "artist": "Queen",
+            "title": "News of the World"
+        },
+        {
+            "id": 14,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/bhouse_480x.jpg?v=1638806875",
+            "artist": "Beach House",
+            "title": "Depression Cherry"
+        },
+        {
+            "id": 15,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Oasis-Definitely-Maybe-Sister-Ray_480x.jpg?v=1570374322",
+            "artist": "Oasis",
+            "title": "Definitely Maybe"
+        },
+        {
+            "id": 16,
+            "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/currents_360x.jpg?v=1634815211",
+            "artist": "Tame Impala",
+            "title": "Currents"
+        }
+    ]
+}
