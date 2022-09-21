@@ -1,7 +1,5 @@
 import { useEffect, useRef } from "react";
 import { BrowserRouter, Routes, Link, Route } from "react-router-dom";
-import AboutPage from "../../pages/AboutPage";
-import IndexPage from "../../pages/IndexPage";
 import '../../styles/css/library.css';
 import logo from '../../assets/svg/Logo_Vao.svg';
 

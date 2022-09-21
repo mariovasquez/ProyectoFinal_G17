@@ -1,0 +1,131 @@
+[
+    {
+        "id": 1,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/radiohead-kid-a-sister-ray_480x.jpg?v=1570377516",
+        "artist": "Radiohead",
+        "title": "Kid A",
+        "new": 1,
+        "popular": 0
+    },
+    {
+        "id": 2,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/oasis20000000170887_2_480x.jpg?v=1657700137",
+        "artist": "Oasis",
+        "title": "Be Here Now",
+        "new": 1,
+        "popular": 0
+        
+    },
+    {
+        "id": 3,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Parachutes-1593635064_480x.jpg?v=1594732369",
+        "artist": "Coldplay",
+        "title": "Parachutes",
+        "new": 1,
+        "popular": 0
+    },
+    {
+        "id": 4,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Keane_Strangeland_360x.jpg?v=1654791292",
+        "artist": "Keane",
+        "title": "Strangeland",
+        "new": 1,
+        "popular": 0
+    },
+    {
+        "id": 5,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Homework_Daft_Punk_480x.jpg?v=1576252617",
+        "artist": "Daft Punk",
+        "title": "Homework",
+        "new": 1,
+        "popular": 0
+    },
+    {
+        "id": 6,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Gorillaz-RSDStoresExclNeonPurpleVinyl_e3cf8afa-e142-47d0-a188-5d9b6acf4a36_720x.png?v=1661958601",
+        "artist": "Gorillaz",
+        "title": "Craker Island",
+        "new": 1,
+        "popular": 0
+    },
+    {
+        "id": 7,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/themarsvoltafrancesthemute_240x.jpg?v=1636978461",
+        "artist": "The Mars Volta",
+        "title": "Frances the Mute",
+        "new": 1,
+        "popular": 0
+    },
+    {
+        "id": 8,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Interpol-Antics-Sister-Ray_480x.jpg?v=1570375922",
+        "artist": "Interpol",
+        "title": "Antics",
+        "new": 1,
+        "popular": 0
+    },
+    {
+        "id": 9,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/MUS000356486_480x.jpg?v=1612541904",
+        "artist": "Blur",
+        "title": "Blur",
+        "new": 0,
+        "popular": 1
+    },
+    {
+        "id": 10,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/gorillaz-demon-days-sister-ray_240x.jpg?v=1570377287",
+        "artist": "Gorillaz",
+        "title": "Demon Days",
+        "new": 0,
+        "popular": 1
+    },
+    {
+        "id": 11,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/room_480x.jpg?v=1632999315",
+        "artist": "The Strokes",
+        "title": "Room On Fire",
+        "new": 0,
+        "popular": 1
+    },
+    {
+        "id": 12,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Arctic-Monkeys-AM-Sister-Ray_480x.jpg?v=1570377553",
+        "artist": "Artic Monkeys",
+        "title": "AM",
+        "new": 0,
+        "popular": 1
+    },
+    {
+        "id": 13,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/61Ms7wveh3L_480x.jpg?v=1592399218",
+        "artist": "Queen",
+        "title": "News of the World",
+        "new": 0,
+        "popular": 1
+    },
+    {
+        "id": 14,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/bhouse_480x.jpg?v=1638806875",
+        "artist": "Beach House",
+        "title": "Depression Cherry",
+        "new": 0,
+        "popular": 1
+    },
+    {
+        "id": 15,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Oasis-Definitely-Maybe-Sister-Ray_480x.jpg?v=1570374322",
+        "artist": "Oasis",
+        "title": "Definitely Maybe",
+        "new": 0,
+        "popular": 1
+    },
+    {
+        "id": 16,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/currents_360x.jpg?v=1634815211",
+        "artist": "Tame Impala",
+        "title": "Currents",
+        "new": 0,
+        "popular": 1
+    }
+]
