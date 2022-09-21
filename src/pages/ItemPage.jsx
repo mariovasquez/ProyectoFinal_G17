@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 
 const ItemPage = () => {
 
-    const {id} = useParams();
+    const { id } = useParams();
 
     const [album, setAlbum] = useState([]);
 
@@ -15,8 +15,8 @@ const ItemPage = () => {
         try {
             const response = await fetch(url);
             const data = await response.json();
-            data.newReleases.map((element, index)=>{
-                if(element.id == id){
+            data.map((element, index) => {
+                if (element.id == id) {
                     setAlbum(element);
                 }
             })
@@ -26,8 +26,13 @@ const ItemPage = () => {
     }
 
     return (
-        <h2>ID: {album.id}</h2>
+        <>
+            <h2>ID: {album.id}</h2>
+            <h2>Artista: {album.artist}</h2>
+            <h2>Album: {album.title}</h2>
+            <img src={album.image_url} alt="" />
+        </>
     );
 }
- 
+
 export default ItemPage;

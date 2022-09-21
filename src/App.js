@@ -17,11 +17,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route path="/store/:id" element={<ItemPage/>}></Route>
             <Route index element={<IndexPage/>}></Route>
             <Route path="about" element={<AboutPage />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="store" element={<StorePage/>}/>
+            <Route path="/store/:id" element={<ItemPage/>}></Route>
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>

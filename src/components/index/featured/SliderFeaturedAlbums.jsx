@@ -34,7 +34,7 @@ const SliderNewReleasesAlbums = ({ albums }) => {
                         albums.map((element, index) => (
                             <SwiperSlide>
                                 <div className="section__featured-album-container" data-key={index}>
-                                    <Link to={`/store/${element.id}`}>
+                                    <Link to={`/store/${element.id}`} className="link">
                                         <SliderAlbum
                                             id={element.id}
                                             urlImage={element.image_url}

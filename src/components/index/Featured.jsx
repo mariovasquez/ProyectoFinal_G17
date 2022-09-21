@@ -36,8 +36,18 @@ const Featured = () => {
         try {
             const response = await fetch(url);
             const data = await response.json();
-            setPopularAlbumsData(data.popular);
-            setNewReleasesAlbumsData(data.newReleases);
+            const newReleasesArray = [];
+            const popularArray = [];
+            data.map((element, index) => {
+                if (element.new == 1) {
+                    newReleasesArray.push(element)
+                }
+                if (element.popular == 1) {
+                    popularArray.push(element)
+                }
+            })
+            setNewReleasesAlbumsData(newReleasesArray);
+            setPopularAlbumsData(popularArray);
         } catch (error) {
             console.log(error);
         }
@@ -57,7 +67,7 @@ const Featured = () => {
                     />
                 </div>
                 <div className="container--featured-albums container--featured-albums-disabled" id="popularAlbums" ref={popularAlbums}>
-                <SliderNewReleasesAlbums
+                    <SliderNewReleasesAlbums
                         albums={popularAlbumsData}
                     />
                 </div>
