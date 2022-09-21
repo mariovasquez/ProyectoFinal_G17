@@ -27,6 +27,7 @@
         font-size: 1.25rem;
         border: 1px solid var(--tertiary-theme-color);
         transform: scale(0.9);
+        transition: all 0.25s ease-in-out;
 
         &:hover {
             background: white;

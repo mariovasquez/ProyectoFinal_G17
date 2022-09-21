@@ -3,6 +3,7 @@
     color: var(--primary-text-color);
     font-family: var(--primary-font-family);
     margin: 0;
+    transition: all 0.25s;
 
     &--dark{
         --tertiary-theme-color: #FF0039;

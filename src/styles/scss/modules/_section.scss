@@ -19,8 +19,8 @@
 
     &__featured{
         padding: 0;
-        background-color: var(--primary-theme-color);
         width: 100%;
+        transition: all 0.25s;
 
         &-titles{
             display: flex;
