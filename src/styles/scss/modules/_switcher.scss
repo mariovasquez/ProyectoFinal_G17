@@ -21,15 +21,15 @@
 }
 
 .icon{
-    --visibility-sun: contents;
-    --visibility-moon: none;
+    --visibility-sun: none;
+    --visibility-moon: contents;
     color: white;
     
     &__sun{
         display: var(--visibility-sun);
 
         &--toggle{
-            --visibility-sun: none;
+            --visibility-sun: contents;
         }
     }
 
@@ -37,7 +37,7 @@
         display: var(--visibility-moon);
 
         &--toggle{
-            --visibility-moon: contents;
+            --visibility-moon: none;
         }
     }
 

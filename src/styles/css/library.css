@@ -1047,21 +1047,21 @@
 }
 
 .icon {
-  --visibility-sun: contents;
-  --visibility-moon: none;
+  --visibility-sun: none;
+  --visibility-moon: contents;
   color: white;
 }
 .icon__sun {
   display: var(--visibility-sun);
 }
 .icon__sun--toggle {
-  --visibility-sun: none;
+  --visibility-sun: contents;
 }
 .icon__moon {
   display: var(--visibility-moon);
 }
 .icon__moon--toggle {
-  --visibility-moon: contents;
+  --visibility-moon: none;
 }
 
 .nav_span {

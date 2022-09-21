@@ -3,8 +3,9 @@ import { BrowserRouter, Routes, Link, Route } from "react-router-dom";
 import AboutPage from "../../pages/AboutPage";
 import IndexPage from "../../pages/IndexPage";
 import '../../styles/css/library.css';
+import logo from '../../assets/svg/Logo_Vao.svg';
 
-const Header = ({ logo }) => {
+const Header = () => {
     const header = useRef();
     const headerNav = useRef();
     const headerNavMenuLinkList = useRef();
@@ -52,7 +53,7 @@ const Header = ({ logo }) => {
     }, []);
 
     return (
-        <BrowserRouter>
+        <>
             <header className="header" ref={header}>
                 <nav className="nav" id="nav" ref={headerNav}>
                     <div className="container container--nav-r">
@@ -67,13 +68,13 @@ const Header = ({ logo }) => {
                                 <Link to='/' className="menu__link">INICIO</Link>
                             </li>
                             <li>
-                                <Link to='/' className="menu__link">TIENDA</Link>
+                                <Link to='/store' className="menu__link">TIENDA</Link>
                             </li>
                             <li>
                                 <Link to='/about' className="menu__link">NOSOTROS</Link>
                             </li>
                             <li>
-                                <Link to='/' className="menu__link">CONTACTO</Link>
+                                <Link to='/contact' className="menu__link">CONTACTO</Link>
                             </li>
                             <li className="nav__action nav__action--close" id="navActionClose" onClick={closeMenu}>
                                 <i className="bi bi-x-circle"></i>
@@ -86,11 +87,7 @@ const Header = ({ logo }) => {
                     <span><i className="bi bi-moon-stars icon icon__moon"></i></span>
                 </button>
             </header >
-            <Routes>
-                <Route path="/" element={<IndexPage />} />
-                <Route path="/about" element={<AboutPage />} />
-            </Routes>
-        </BrowserRouter>
+        </>
     );
 }
 
