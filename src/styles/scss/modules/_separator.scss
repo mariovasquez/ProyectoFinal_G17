@@ -1,0 +1,53 @@
+.separator {
+    background-image: url("../../assets/img/Statistics.jpg");
+    
+    &__container {
+        padding: 2rem;
+
+        &-block{
+            display: inline;
+        }
+    }
+
+    &__title {
+        color: white;
+        text-align: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    &__columns-flex {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 2rem;
+        gap: 1rem;
+        &1 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        &-paragraph {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 22px;
+            color: #DFDFE8;
+            text-align: center;
+        }
+        &-title {
+            text-align: center;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            color: var(--tertiary-theme-color);
+        }
+    }
+}
+
+.counter {
+    text-align: center;
+
+}

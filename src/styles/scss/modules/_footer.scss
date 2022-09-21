@@ -1,0 +1,136 @@
+.footer {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #0D0E12;
+    justify-content: center;
+
+    &__row {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap:50px;
+        padding: 45px 0px;
+    }
+
+    &__section {
+        width: 100%;
+        height: 100%;
+        display: inline;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    
+    &__title {
+        top: 0;
+        color: white;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.125rem;
+        margin: 0;
+        padding-bottom: 1rem;
+        text-align: left;
+
+    }
+    &__buttons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        max-width: 100%;
+
+    }
+
+    &__img {
+        width: 200px;
+        padding-top: 3rem;
+        cursor: pointer;
+    }
+    &__list {
+        padding: 0;
+        text-align: left;
+        gap: 0.25rem;
+        list-style: none;
+    }
+    
+    &__paragraph {
+        text-decoration: none;
+        color: white;
+        &_1 {
+            color: white;
+            text-align: left;
+        }
+        &:hover {
+            color: var(--tertiary-theme-color);
+        }
+    }
+
+    &__sub {
+        background-color: var(--tertiary-theme-color);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 0.25rem;
+
+        &-menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: 0%;   
+            gap: 2rem;
+            color: white;
+            text-decoration: none;
+            list-style: none;
+            padding: 0rem 5rem;
+
+
+        }
+    }    
+    &__icon-bi {
+        color: white;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+}
+
+@media(max-width: 768px){
+    .footer{
+        &__row{
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap:30px;
+            padding: 35px 0px;
+        }
+        &__section {
+            box-sizing: border-box;
+            padding-left: 0.25rem;
+        }
+
+        &__list {
+            max-width: 100%;
+        }
+        
+
+        &__logo{
+            margin: 0;
+        }
+
+        &__buttons {
+            max-width: 350px;
+        }
+
+        &__paragraph {
+            max-width: 100%;
+        }
+    }
+}

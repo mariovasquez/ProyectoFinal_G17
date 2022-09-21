@@ -1,0 +1,94 @@
+.card{
+    overflow: hidden;
+    
+    &__title{
+        color: var(--tertiary-text-color);
+        padding: 0.125rem;
+        background-color: var(--tertiary-theme-color);
+        text-shadow: 0rem 0.25rem var(--secondary-text-color);
+    }
+    
+    &--main{
+        display: flex;
+        align-items:flex-end;
+        padding: 0;
+        width: 100%;
+        height: 180px;
+
+        &-new{
+            background-image: url('https://cdn.shopify.com/s/files/1/0096/1884/9839/products/HotChip_e53278a8-bc15-4c9d-98dc-fbe502a0d8d4_480x.jpg?v=1650360152');
+        }
+        
+        &-preorder{
+            background-image: url('https://cdn.shopify.com/s/files/1/0096/1884/9839/products/The_Strokes_Album_Artwork_480x.png?v=1592397706');
+        }
+    }
+    
+    &--album{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 260px;
+        width: 150px;
+        background-color: var(--primary-theme-color);
+
+        &-uneven{
+            animation: scaleElement-s-uneven 0.75s infinite;
+        }
+        
+        &:hover{
+            cursor: pointer;
+            background-color: var(--secondary-shadow-color);
+            animation: none;
+            animation: rotate 0.25s;
+        }
+        
+        &-even{
+            animation: scaleElement-s 0.75s infinite;
+        }
+    }
+    
+    &__img{
+        width: 175px;
+        height: 175px;
+    }
+    
+    &__album{
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.125rem;
+        color: var(--primary-text-color);
+    }
+    
+    &__artist{
+        font-weight: 300;
+    }
+}
+
+@media (min-width:768px){
+    .card--hero{
+        height: 6rem;
+    }
+}
+
+@media (min-width:1015px){
+    .card{
+        &--main{
+            max-width: 200px;
+            height: 360px;
+        }
+    
+        &--album{
+            width: 200px;
+            height: 360px;
+        }
+        &--hero{
+            font-size: 1.25rem;
+    
+            &:hover{
+                font-size: 1rem;
+            }
+        }
+    }
+}

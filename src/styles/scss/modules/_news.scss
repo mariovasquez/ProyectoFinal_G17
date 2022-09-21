@@ -1,0 +1,39 @@
+.news{
+    &__title{
+        font-weight: 700;
+        font-size: 2.25rem;
+        color: var(--primary-text-color);
+        text-align: center;
+    }
+    &__subtitle{
+        font-weight: 500;
+        font-size: 2.25rem;
+        color: var(--tertiary-theme-color);
+        text-align: center;
+    }
+}
+
+.new{
+    &__img{
+        border-radius: 0.7rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    &__title{
+        text-align: justify;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: var(--primary-text-color);
+    }
+    &__date{
+        font-weight: 400;
+        font-size: 1.25rem;
+        color: var(--tertiary-theme-color);
+    }
+    &__description{
+        font-weight: 400;
+        font-size: 1.125rem;
+        text-align: justify;
+        color: var(--primary-shadow-color);
+    }
+}
