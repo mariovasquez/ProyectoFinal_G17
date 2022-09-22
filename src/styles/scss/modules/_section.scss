@@ -13,6 +13,14 @@
         max-width: 100%;
     }
 
+    &--item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 85vh;
+    }
+
     &--slider{
         width: 100%;
     }
@@ -204,6 +212,12 @@
             align-items: center;
             justify-content: center;
         }
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
     }
 }
 

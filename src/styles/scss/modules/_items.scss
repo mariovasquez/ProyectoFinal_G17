@@ -1,0 +1,148 @@
+.item{
+    &__img{
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        box-shadow: 0 0 0 0.25rem var(--primary-shadow-color);
+
+        &-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__album{
+        // display: flex;
+        // flex-direction: column;
+        color: var(--primary-shadow-color);
+
+        &-artist{
+            color: var(--tertiary-theme-color);
+            font-size: 1.5rem;
+        }
+        &-title{
+            font-size: 2.5rem;
+        }
+        &-date{
+            font-size: 1rem;
+        }
+        &-info{
+            font-size: 1rem;
+        }
+
+        &-option{
+            font-size: 0.85rem;
+            font-weight: 500;
+
+            &-container{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+
+        &-quantity{
+            &-container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2rem;
+            }
+            
+            &-button{
+                width: 3rem;
+                height: 3rem;
+                background-color: transparent;
+                border-radius: var(--primary-border-radius);
+                border: none;
+                box-shadow: 0 0 0 0.125rem var(--primary-shadow-color);
+                transition: box-shadow 0.25s ease-in-out;
+
+                &:hover{
+                    box-shadow: 0 0 0 0.125rem var(--primary-highlight-color);
+                }
+            }
+
+            &-number{
+                color: var(--primary-text-color);
+                margin: 0;
+                font-size: 0.85rem;
+            }
+        }
+
+        &-format{
+            &-dropdown{
+                // position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0;
+                width: 15rem;
+                height: 3rem;
+                background-color: transparent;
+                border-radius: var(--primary-border-radius);
+                border: none;
+                box-shadow: 0 0 0 0.125rem var(--primary-shadow-color);
+                font-size: 1rem;
+                color: var(--primary-text-color);
+                font-weight: 500;
+                text-align: left;
+                padding: 0 1rem;
+                transition: box-shadow 0.25s ease-in-out;
+
+                &:hover{
+                    box-shadow: 0 0 0 0.125rem var(--primary-highlight-color);
+                }
+            }
+        }
+
+        &-buy{
+            &-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-top: 2.5rem;
+            }
+
+            &-price{
+                color: var(--tertiary-theme-color);
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
+
+            &-button{
+                background-color: var(--tertiary-theme-color);
+                width: 16rem;
+                height: 3rem;
+                color: white;
+                font-size: 0.85rem;
+                border: none;
+                border-radius: var(--primary-border-radius);
+                letter-spacing: 0.25rem;
+                transition: filter 0.25s ease-in-out;
+
+                &:hover{
+                    filter: brightness(80%);
+                }
+            }
+
+            &-cart{
+                border: none;
+                color: var(--primary-text-color);
+                background-color: transparent;
+                border-radius: var(--primary-border-radius);
+                width: 3rem;
+                height: 3rem;
+                box-shadow: 0 0 0 0.125rem var(--primary-shadow-color);
+                font-size: 1.5rem;
+                transition: box-shadow 0.25s ease-in-out;
+
+                &:hover{
+                    box-shadow: 0 0 0 0.125rem var(--primary-highlight-color);
+                }
+            }
+        }
+    }
+}
