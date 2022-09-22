@@ -215,8 +215,9 @@
     }
 
     &__item{
+        padding: 8rem 1.5rem;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 5rem;
     }
 }
@@ -270,6 +271,15 @@
         }
     }
     
+}
+
+@media(min-width: 970px){
+    .container{
+        &__item{
+            flex-direction: row;
+            gap: 5rem;
+        }
+    }
 }
 
 @media(min-width: 1120px){
