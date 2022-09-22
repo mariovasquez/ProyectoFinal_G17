@@ -3,7 +3,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { useEffect, useRef, useState } from 'react';
-import SliderNewReleasesAlbums from './featured/SliderFeaturedAlbums';
+import SliderFeaturedAlbums from './featured/SliderFeaturedAlbums';
 const Featured = () => {
     const newReleases = useRef();
     const popular = useRef();
@@ -62,12 +62,12 @@ const Featured = () => {
                     <h2 className="section__featured-title" id="popular" ref={popular} onClick={popularClick}>Tendencias</h2>
                 </div>
                 <div className="container--featured-albums" id="newReleasesAlbums" ref={newReleasesAlbums}>
-                    <SliderNewReleasesAlbums
+                    <SliderFeaturedAlbums
                         albums={newReleasesAlbumsData}
                     />
                 </div>
                 <div className="container--featured-albums container--featured-albums-disabled" id="popularAlbums" ref={popularAlbums}>
-                    <SliderNewReleasesAlbums
+                    <SliderFeaturedAlbums
                         albums={popularAlbumsData}
                     />
                 </div>

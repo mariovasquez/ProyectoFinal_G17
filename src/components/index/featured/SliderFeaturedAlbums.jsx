@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { BrowserRouter, Routes, Link, Route } from "react-router-dom";
 import SliderAlbum from './SliderAlbum';
-const SliderNewReleasesAlbums = ({ albums }) => {
+const SliderFeaturedAlbums = ({ albums }) => {
 
     return (
         <>
@@ -56,4 +56,4 @@ const SliderNewReleasesAlbums = ({ albums }) => {
     );
 }
 
-export default SliderNewReleasesAlbums;
+export default SliderFeaturedAlbums;
