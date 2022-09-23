@@ -3,7 +3,6 @@ import { useParams } from "react-router";
 import Footer from "../components/sections/Footer";
 
 const ItemPage = () => {
-
     //--------------------------------Consumir datos del JSON
     const { id } = useParams();
 
@@ -58,10 +57,10 @@ const ItemPage = () => {
     }
 
     const less = () => {
-        setCounter(counter - 1);
+        if(counter>1){
+            setCounter(counter - 1);
+        }
     }
-
-    console.log(counter);
 
     return (
         <>
