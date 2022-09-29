@@ -1,7 +1,7 @@
 const Form = () => {
   return (
     <div className="contact__form">
-    <h2 className="contact__title">Contáctanos</h2>
+    <h2 className="contact__title ">Contáctanos</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida urna erat.</p>         
      <form className="contact__form">
         <label htmlFor="nombre">

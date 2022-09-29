@@ -2,6 +2,7 @@ import logoVaoText from '../../assets/svg/Logo_Vao_Texto.svg';
 const Footer = () => {
     return (
         <footer className="footer">
+            <div className="container">
         <div className="footer__row">
             <div className="footer__section">
                 <div className="footer__logo">
@@ -41,7 +42,7 @@ const Footer = () => {
                     </div>
                 </form>
             </div>
-        </div>
+        </div></div>
         <div className="footer__sub">
             <ul className="footer__sub-menu">
                 <div className="icon-container">
