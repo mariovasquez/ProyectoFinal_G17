@@ -15,7 +15,6 @@ const Footer = () => {
                 <ul className="footer__list">
                     <li className="footer__list"><a href="" className="footer__paragraph">Inicio</a></li>
                     <li className="footer__list"><a href="" className="footer__paragraph">Tienda</a></li>
-                    <li className="footer__list"><a href="" className="footer__paragraph">Planes</a></li>
                     <li className="footer__list"><a href="" className="footer__paragraph">Nosotros</a></li>
                     <li className="footer__list"><a href="" className="footer__paragraph">Contacto</a></li>
                 </ul>
