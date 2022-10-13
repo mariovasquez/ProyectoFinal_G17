@@ -1,7 +1,5 @@
-import { useEffect, useRef } from "react";
-import { BrowserRouter, Routes, Link, Route } from "react-router-dom";
-import AboutPage from "../../pages/AboutPage";
-import IndexPage from "../../pages/IndexPage";
+import { useEffect, useRef, useState } from "react";
+import { BrowserRouter, Routes, Link, Route, useSearchParams, useLocation } from "react-router-dom";
 import '../../styles/css/library.css';
 import logo from '../../assets/svg/Logo_Vao.svg';
 
@@ -10,9 +8,31 @@ const Header = () => {
     const headerNav = useRef();
     const headerNavMenuLinkList = useRef();
 
+    
+    let location = useLocation();
+    let navbar;
+
+    useEffect(()=>{
+        if(location.pathname === "/"){
+            header.current.classList.remove('header--scroll');
+            navbar=true;
+        }
+        else if(location.pathname !== "/"){
+            header.current.classList.add('header--scroll');
+            navbar=false;
+        }
+        document.addEventListener('scroll', documentScroll);
+    },[location])
+
+    
     const documentScroll = () => {
         const { scrollY } = window;
-        header.current.classList.toggle('header--scroll', scrollY > 0);
+        if(navbar === true){
+            header.current.classList.toggle('header--scroll', scrollY > 0);
+        }
+        else{
+            header.current.classList.add('header--scroll');
+        }
     };
 
     const switchTheme = () => {
@@ -30,8 +50,6 @@ const Header = () => {
         }
     };
 
-    document.addEventListener('scroll', documentScroll);
-
     const openMenu = () => {
         headerNav.current.classList.toggle('nav--open');
     };
@@ -41,12 +59,12 @@ const Header = () => {
     };
 
     useEffect(() => {
-        if (localStorage.getItem('darkMode') === 'false' || localStorage.getItem('darkMode') === null) {
-            document.querySelector('.body').classList.remove('body--dark');
+        if (localStorage.getItem('darkMode') === 'true' || localStorage.getItem('darkMode') === null) {
+            document.querySelector('.body').classList.add('body--dark');
             const btnSwitch = document.querySelector('.switch');
             btnSwitch.classList.add("active");
         } else {
-            document.querySelector('.body').classList.add('body--dark');
+            document.querySelector('.body').classList.remove('body--dark');
             const btnSwitch = document.querySelector('.switch');
             btnSwitch.classList.remove("active");
         }

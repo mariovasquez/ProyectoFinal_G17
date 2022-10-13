@@ -8,9 +8,15 @@
         flex-direction: column;
         padding-top: 7rem;
         align-items: center;
-        animation: fadeBackground 6s infinite ;
-        background-color: var(--tertiary-shadow-color);
         max-width: 100%;
+    }
+
+    &--item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 85vh;
     }
 
     &--slider{
@@ -205,6 +211,13 @@
             justify-content: center;
         }
     }
+
+    &__item{
+        padding: 8rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
 }
 
 @media(min-width: 850px){
@@ -256,6 +269,15 @@
         }
     }
     
+}
+
+@media(min-width: 970px){
+    .container{
+        &__item{
+            flex-direction: row;
+            gap: 5rem;
+        }
+    }
 }
 
 @media(min-width: 1120px){

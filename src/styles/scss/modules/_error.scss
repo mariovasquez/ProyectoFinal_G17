@@ -1,0 +1,21 @@
+.error {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__img {
+    padding: 0rem 1rem 2rem 1rem;
+    
+  }
+  &__title {
+    text-align: center;
+    color: var(--tertiary-theme-color);
+    padding-bottom: 1rem;
+  }
+  &__paragraph {
+    text-align: center;
+    color: var(--reverse-primary-shadow-color);
+    padding-bottom: 4rem;
+  }
+}

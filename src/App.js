@@ -8,6 +8,8 @@ import AboutPage from './pages/AboutPage';
 import Layout from './layout/Layout';
 import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
+import StorePage from './pages/StorePage';
+import ItemPage from './pages/ItemPage';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
             <Route index element={<IndexPage/>}></Route>
             <Route path="about" element={<AboutPage />} />
             <Route path="contact" element={<ContactPage />} />
+            <Route path="store" element={<StorePage/>}/>
+            <Route path="/store/:id" element={<ItemPage/>}></Route>
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>

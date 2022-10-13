@@ -1,7 +1,12 @@
+import { useEffect, useRef, useState } from "react";
 import logoVaoText from '../../assets/svg/Logo_Vao_Texto.svg';
+import { BrowserRouter, Routes, Link, Route, useSearchParams, useLocation } from "react-router-dom";
+
 const Footer = () => {
+    const headerNavMenuLinkList = useRef();
     return (
         <footer className="footer">
+            <div className="container">
         <div className="footer__row">
             <div className="footer__section">
                 <div className="footer__logo">
@@ -11,12 +16,11 @@ const Footer = () => {
             </div>
             <div className="footer__section">
                 <h5 className="footer__title">Páginas</h5>
-                <ul className="footer__list">
-                    <li className="footer__list"><a href="" className="footer__paragraph">Inicio</a></li>
-                    <li className="footer__list"><a href="" className="footer__paragraph">Tienda</a></li>
-                    <li className="footer__list"><a href="" className="footer__paragraph">Planes</a></li>
-                    <li className="footer__list"><a href="" className="footer__paragraph">Nosotros</a></li>
-                    <li className="footer__list"><a href="" className="footer__paragraph">Contacto</a></li>
+                <ul className="footer__list" ref={headerNavMenuLinkList}>
+                    <li className="footer__list"><Link to='/' className="footer__paragraph">Inicio</Link></li>
+                    <li className="footer__list"><Link to='/store' className="footer__paragraph">Tienda</Link></li>
+                    <li className="footer__list"><Link to='/about' className="footer__paragraph">Nosotros</Link></li>
+                    <li className="footer__list"><Link to='/contact' className="footer__paragraph">Contacto</Link></li>
                 </ul>
             </div>
             <div className="footer__section">
@@ -41,7 +45,7 @@ const Footer = () => {
                     </div>
                 </form>
             </div>
-        </div>
+        </div></div>
         <div className="footer__sub">
             <ul className="footer__sub-menu">
                 <div className="icon-container">
