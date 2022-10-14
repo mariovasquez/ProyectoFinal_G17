@@ -88,11 +88,6 @@
   border-bottom-right-radius: 0.75rem;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
 @media (min-width: 1920px) {
   .about__paragraph {
     font-size: 1rem;
@@ -736,6 +731,7 @@ img {
 }
 .section {
   overflow: hidden;
+  min-height: 100vh;
 }
 .section--about {
   display: flex;
@@ -1268,7 +1264,7 @@ img {
   width: 15rem;
   transition: all 0.25s ease-in-out;
 }
-.item__album-format-dropdown:hover .item__album-format-dropdown__menu {
+.item__album-format-dropdown:active .item__album-format-dropdown__menu {
   display: block;
 }
 .item__album-format-dropdown__menu-item {
@@ -1330,7 +1326,10 @@ img {
   }
 }
 .contact {
+  display: flex;
   padding: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 .contact__wrapper {
   display: grid;
@@ -1344,7 +1343,7 @@ img {
   gap: 0.75rem;
 }
 .contact__img {
-  border-radius: 4px;
+  border-radius: 4rem;
   object-fit: cover;
 }
 

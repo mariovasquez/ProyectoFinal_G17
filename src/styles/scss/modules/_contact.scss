@@ -1,5 +1,8 @@
 .contact {
+  display: flex;
   padding: 2rem;
+  align-items: center;
+  justify-content: center;
 
   &__wrapper {
     display: grid;
@@ -14,7 +17,7 @@
     gap: 0.75rem;
     }
   &__img {
-      border-radius: 4px;
+      border-radius: 4rem;
       object-fit: cover;
   }
 }

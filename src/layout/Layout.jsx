@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router";
+import Footer from "../components/sections/Footer";
 import Header from "../components/sections/Header";
 
 const Layout = () => {
@@ -11,6 +12,7 @@ const Layout = () => {
         <>
             <Header />
             <Outlet />
+            <Footer />
         </>
     );
 }

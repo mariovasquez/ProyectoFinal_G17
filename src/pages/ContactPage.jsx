@@ -5,7 +5,7 @@ import Form from '../components/contact/Form';
 const ContactPage = () => {
     return (
         <>
-        <article className="contact">
+        <article className="section contact">
             <div className="container">
                 <div className="contact__wrapper">
                 <Form/>
@@ -15,8 +15,6 @@ const ContactPage = () => {
                 </div>
             </div>
         </article>
-        
-        <Footer/>
         </>
     );
 }

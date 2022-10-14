@@ -54,7 +54,7 @@ const Featured = () => {
     }
 
     return (
-        <section className="section section__featured">
+        <section className="section__featured">
             <div className="container container--featured">
                 <div className="section__featured-titles">
                     <h2 className="section__featured-title section__featured-title--selected" id="newReleases" ref={newReleases} onClick={newReleasesClick}>Nuevos

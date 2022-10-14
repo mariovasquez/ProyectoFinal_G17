@@ -62,7 +62,6 @@ const IndexPage = () => {
                 </div>
             </section>
             <News />
-            <Footer/>
         </>
     );
 }
