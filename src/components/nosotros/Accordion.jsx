@@ -9,6 +9,7 @@ const Accordion = () => {
 
   return (
     <Fragment>
+      <div className="container">
       <section className="accordion">
         <div className="accordion-row">
           <div className="left">
@@ -32,6 +33,7 @@ const Accordion = () => {
           </div>
         </div>
       </section>
+      </div>
     </Fragment>
   )
 }
