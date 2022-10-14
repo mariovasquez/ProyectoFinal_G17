@@ -5,6 +5,7 @@ import questions from "../details/questions";
 const Accordion = () => {
   
   const [detail, setDetail] = useState(questions)
+
   return (
     <Fragment>
       <section className="accordion">
@@ -17,8 +18,8 @@ const Accordion = () => {
                 <div className="left-content">
                 <Collapsible 
                   className="Collapsible"
-                  trigger = {[<i class="bi bi-caret-down"></i>, detail.question]}
-                  triggerWhenOpen = {[<i class="bi bi-caret-up"></i>, detail.question]}>
+                  trigger = {[<i class="bi bi-chevron-down"></i>, detail.question]}
+                  triggerWhenOpen = {[<i class="bi bi-chevron-up"></i>, detail.question]}>
                     <p className="content-show">
                       {detail.answer}
                     </p>
