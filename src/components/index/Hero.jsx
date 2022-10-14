@@ -34,36 +34,36 @@ const Hero = () => {
                     id="heroSlider"
                 >
                     <SwiperSlide>
-                        <img src={heroSliderImg1} className="d-block w-100" alt="baterista"/>
+                        <img src={heroSliderImg1} className="section d-block w-100 slider__img" alt="baterista"/>
                         <div className="carousel-caption d-flex flex-column justify-content-center h-100">
                             <h5 className="slider__title">POST MALONE</h5>
                             <h5 className="slider__title">TWELVE CARAT TOOTHACHE</h5>
                             <div className="slider__buttons">
-                                <button className="slider__button-text">COMPRAR</button>
-                                <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button>
+                                <button className="item__album-buy-button">COMPRAR</button>
+                                {/* <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button> */}
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={heroSliderImg2} className="d-block w-100" alt="artik_monkeys" />
+                        <img src={heroSliderImg2} className="section d-block w-100 slider__img" alt="artik_monkeys" />
                         <div className="carousel-caption d-flex flex-column justify-content-center h-100 ">
                             <h5 className="slider__title">NUEVO ALBUM</h5>
                             <h5 className="slider__title">ARTIC MONKEYS</h5>
                             <div className="slider__buttons">
-                                <button className="slider__button-text">COMPRAR</button>
-                                <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button>
+                                <button className="item__album-buy-button">COMPRAR</button>
+                                {/* <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button> */}
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={heroSliderImg3} className="d-block w-100 slider__filter"
+                        <img src={heroSliderImg3} className="section d-block w-100 slider__filter slider__img"
                             alt="imagine_dragons" />
                         <div className="carousel-caption d-flex flex-column justify-content-center h-100 ">
                             <h5 className="slider__title">IMAGINE DRAGONS</h5>
                             <h5 className="slider__title">ORIGINS</h5>
                             <div className="slider__buttons">
-                                <button className="slider__button-text">COMPRAR</button>
-                                <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button>
+                                <button className="item__album-buy-button">COMPRAR</button>
+                                {/* <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button> */}
                             </div>
                         </div>
                     </SwiperSlide>

@@ -2,6 +2,7 @@
     // padding: var(--padding-section) 0;
     // background-color: var(--primary-theme-color);
     overflow: hidden;
+    min-height: 100vh;
     
     &--about{
         display: flex;

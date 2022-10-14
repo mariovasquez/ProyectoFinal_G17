@@ -30,34 +30,60 @@ const ItemPage = () => {
     //-----------------------------------Lógica del Dropdown
     const dropdown1 = useRef();
     const dropdown2 = useRef();
+    const dropdownMenu = useRef();
 
     //Settear la opcion activa por defecto
     const [formatoActivo, setFormatoActivo] = useState();
 
     const getDefault = () => {
-        setFormatoActivo(dropdown1.current.innerText);
+        setFormatoActivo("Seleccionar formato ---");
     }
     useEffect(getDefault, []);
 
     //Opcion1 elegida
     const getOption1 = () => {
+        setAmount(album.priceLP * counter);
         setFormatoActivo(dropdown1.current.innerText);
+        dropdownMenu.current.classList.add('item__album-format-dropdown__menu--active');
     }
 
     //Opcion2 elegida
     const getOption2 = () => {
+        setAmount(album.priceCD * counter);
         setFormatoActivo(dropdown2.current.innerText);
+        dropdownMenu.current.classList.add('item__album-format-dropdown__menu--active');
+    }
+
+    const openMenu = () => {
+        dropdownMenu.current.classList.toggle('item__album-format-dropdown__menu--active');
     }
 
     //-----------------------------------Lógica del Contador
     const [counter, setCounter] = useState(1);
+    const [amount, setAmount] = useState(0);
 
     const more = () => {
-        setCounter(counter + 1);
+        if(counter<6){
+            if(formatoActivo === 'LP'){
+                setAmount(album.priceLP * (counter+1));
+            }else if(formatoActivo === 'CD'){
+                setAmount(album.priceCD * (counter+1));
+            }else{
+                setAmount(0);
+            }
+            setCounter(counter + 1);
+        }
     }
 
     const less = () => {
         if(counter>1){
+            if(formatoActivo === 'LP'){
+                setAmount(album.priceLP * (counter-1));
+            }else if(formatoActivo === 'CD'){
+                setAmount(album.priceCD * (counter-1));
+            }else{
+                setAmount(0);
+            }
             setCounter(counter - 1);
         }
     }
@@ -79,13 +105,13 @@ const ItemPage = () => {
                         <div className="item__album-option-container">
                             <div>
                                 <p className="item__album item__album-option">FORMATO</p>
-                                <div className="item__album-format-dropdown">
+                                <div className="item__album-format-dropdown" onClick={openMenu}>
                                     <button className="item__album-format-dropdown-button">
                                         <p style={{ margin: "0" }}>{formatoActivo}</p>
                                         <i class="bi bi-chevron-compact-down"></i>
                                     </button>
-                                    <div className="item__album-format-dropdown__menu">
-                                        <p className="item__album-format-dropdown__menu-item" ref={dropdown1} onClick={getOption1}>Limited LP Neon</p>
+                                    <div className="item__album-format-dropdown__menu" ref={dropdownMenu}>
+                                        <p className="item__album-format-dropdown__menu-item" ref={dropdown1} onClick={getOption1}>LP</p>
                                         <p className="item__album-format-dropdown__menu-item" ref={dropdown2} onClick={getOption2}>CD</p>
                                     </div>
                                 </div>
@@ -97,10 +123,11 @@ const ItemPage = () => {
                                     <p className="item__album item__album-quantity-number">{counter}</p>
                                     <button className="item__album item__album-quantity-button" onClick={more}>+</button>
                                 </div>
+                                <p className="item__album item__album-option" style={{textAlign:"center", margin:"1rem 0 0 0"}}>Máximo 6 unidades.</p>
                             </div>
                         </div>
                         <div className="item__album-buy-container">
-                            <p className="item__album-buy-price">S/100.00</p>
+                            <p className="item__album-buy-price">S/{amount}</p>
                             <div style={{ display: "flex", gap: '2rem' }}>
                                 <button className="item__album-buy-button">COMPRAR</button>
                                 <button className="item__album-buy-cart"><i class="bi bi-cart"></i></button>
@@ -109,7 +136,6 @@ const ItemPage = () => {
                     </div>
                 </div>
             </section>
-            <Footer />
         </>
     );
 }
