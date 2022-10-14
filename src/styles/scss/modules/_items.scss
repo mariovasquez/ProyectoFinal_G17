@@ -118,9 +118,13 @@
                     width: 15rem;
                     transition: all 0.25s ease-in-out;
 
-                    .item__album-format-dropdown:active &{
+                    &--active{
                         display: block;
                     }
+
+                    // .item__album-format-dropdown:hover &{
+                    //     display: block;
+                    // }
                     
                     &-item{
                         margin: 0;

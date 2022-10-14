@@ -1267,7 +1267,7 @@
   width: 15rem;
   transition: all 0.25s ease-in-out;
 }
-.item__album-format-dropdown:active .item__album-format-dropdown__menu {
+.item__album-format-dropdown__menu--active {
   display: block;
 }
 .item__album-format-dropdown__menu-item {

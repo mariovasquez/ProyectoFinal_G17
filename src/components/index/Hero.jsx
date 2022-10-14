@@ -39,8 +39,8 @@ const Hero = () => {
                             <h5 className="slider__title">POST MALONE</h5>
                             <h5 className="slider__title">TWELVE CARAT TOOTHACHE</h5>
                             <div className="slider__buttons">
-                                <button className="slider__button-text">COMPRAR</button>
-                                <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button>
+                                <button className="item__album-buy-button">COMPRAR</button>
+                                {/* <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button> */}
                             </div>
                         </div>
                     </SwiperSlide>
@@ -50,8 +50,8 @@ const Hero = () => {
                             <h5 className="slider__title">NUEVO ALBUM</h5>
                             <h5 className="slider__title">ARTIC MONKEYS</h5>
                             <div className="slider__buttons">
-                                <button className="slider__button-text">COMPRAR</button>
-                                <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button>
+                                <button className="item__album-buy-button">COMPRAR</button>
+                                {/* <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button> */}
                             </div>
                         </div>
                     </SwiperSlide>
@@ -62,8 +62,8 @@ const Hero = () => {
                             <h5 className="slider__title">IMAGINE DRAGONS</h5>
                             <h5 className="slider__title">ORIGINS</h5>
                             <div className="slider__buttons">
-                                <button className="slider__button-text">COMPRAR</button>
-                                <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button>
+                                <button className="item__album-buy-button">COMPRAR</button>
+                                {/* <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button> */}
                             </div>
                         </div>
                     </SwiperSlide>
