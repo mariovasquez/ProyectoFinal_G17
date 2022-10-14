@@ -28,7 +28,7 @@
 }
 
 .left-content {
-  border-bottom: 1px solid var(--tertiary-theme-color);
+  border-bottom: 2px solid var(--tertiary-theme-color);
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
