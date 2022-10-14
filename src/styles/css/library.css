@@ -961,6 +961,9 @@
 .slider {
   width: 100%;
 }
+.slider__img {
+  object-fit: cover;
+}
 .slider__title {
   font-style: normal;
   font-weight: 700;
