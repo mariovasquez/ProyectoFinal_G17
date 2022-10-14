@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import logoVaoText from '../../assets/svg/Logo_Vao_Texto.svg';
-import { BrowserRouter, Routes, Link, Route, useSearchParams, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+   
     const headerNavMenuLinkList = useRef();
     return (
         <footer className="footer">

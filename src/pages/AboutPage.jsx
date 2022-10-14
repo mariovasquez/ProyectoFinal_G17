@@ -1,7 +1,5 @@
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 import Accordion from "../components/nosotros/Accordion";
-import Footer from "../components/sections/Footer";
-import VaoIMG from "../assets/img/Vao_Music.png";
+import VaoIMG from "../assets/img/Vao_Music.jpg";
 
 
 const AboutPage = () => {
@@ -13,9 +11,12 @@ const AboutPage = () => {
                     <div className="about__text">
                         <div className="about__text--container">
                             <h3 className="about__subtitle">Nuestra historia</h3>
-                            <p className="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptas optio culpa adipisci fugiat aliquid atque quaerat rerum est debitis quia officia ipsa, provident praesentium numquam alias aliquam tempora voluptate ea, eos veritatis! Sint autem nesciunt esse doloribus nobis, voluptas repellendus omnis quasi molestias minus ratione sunt, nisi ab. Voluptatem.</p>
-                            <p className="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem similique debitis vitae molestiae provident totam ad reprehenderit itaque atque eveniet dolor, enim laborum quasi eaque, officia, consequuntur earum repellendus dolore!</p>
-                            <p className="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel, quo quam nemo non delectus quidem quaerat libero quibusdam distinctio numquam eius earum aliquid officia commodi, doloremque dolore dolores dolorum deserunt aut voluptatum repellat et?</p>
+                            <p>Somos una empresa dedicada a la comercialización de productos de musicales, de capital 100% peruano, con tiendas
+                                 físicas en ocho de las principales ciudades del país y con cobertura a nivel nacional mediante nuestra página web.
+                                Tenemos la visión de ser la plataforma de música N°1 en el país, brindando soporte a diferentes artistas en su trayectoria impulsando el talento
+                                peruano, contamos con un compromiso de dar lo mejor a un precio justo y competitivo.
+
+                            </p>
                         </div>
                         <img src={VaoIMG} alt="" className="about__img" width="480" height="480" />
                     </div>
@@ -25,18 +26,18 @@ const AboutPage = () => {
                             <div className="valor__item">
                                 <i className="bi bi-person-check-fill valor__item-icon"></i>
                                 <h3 className="valor__item-title">Honestidad</h3>
-                                <p className="valor__item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p className="valor__item-paragraph">Somos transparentes al 100% con nuestros precios</p>
                             </div>
                             <div className="valor__item">
                                 <i className="bi bi-heart-fill valor__item-icon"></i>
                                 <h3 className="valor__item-title">Respeto</h3>
-                                <p className="valor__item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p className="valor__item-paragraph">Respetamos a todos teniendo una politica de 0 discrimación</p>
 
                             </div>
                             <div className="valor__item">
                                 <i className="bi bi-award-fill valor__item-icon"></i>
                                 <h3 className="valor__item-title">Integridad</h3>
-                                <p className="valor__item-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p className="valor__item-paragraph">Tenemos valores solidos para nunca fallar a nuestros clientes</p>
 
                             </div>
                         </div>
