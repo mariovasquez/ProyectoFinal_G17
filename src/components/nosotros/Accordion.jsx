@@ -1,6 +1,7 @@
 import React, {Fragment, useState} from "react";
 import Collapsible from "react-collapsible";
 import questions from "../details/questions";
+import "../../styles/css/modules/accordion.css"
 
 const Accordion = () => {
   
