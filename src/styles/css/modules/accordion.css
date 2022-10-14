@@ -14,18 +14,6 @@
   color: var(--primary-text-color);
 }
 
-.left h3::before {
-  content: "";
-  text-align: center;
-  position: absolute;
-  bottom: -0.5rem;
-  width: 38%;
-  align-items: center;
-  justify-content: center;
-  height: 0.325rem;
-  background-color: var(--tertiary-theme-color);
-  transition: all 0.25s ease-in-out;
-}
 
 .left-content {
   border-bottom: 2px solid var(--tertiary-theme-color);

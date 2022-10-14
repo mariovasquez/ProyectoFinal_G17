@@ -1,5 +1,5 @@
 import Accordion from "../components/nosotros/Accordion";
-import VaoIMG from "../assets/img/Vao_Music.png";
+import VaoIMG from "../assets/img/Vao_Music.jpg";
 
 
 const AboutPage = () => {
