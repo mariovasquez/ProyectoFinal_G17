@@ -66,8 +66,10 @@ const ItemPage = () => {
         if(counter<6){
             if(formatoActivo === 'LP'){
                 setAmount(album.priceLP * (counter+1));
-            }else{
+            }else if(formatoActivo === 'CD'){
                 setAmount(album.priceCD * (counter+1));
+            }else{
+                setAmount(0);
             }
             setCounter(counter + 1);
         }
@@ -77,8 +79,10 @@ const ItemPage = () => {
         if(counter>1){
             if(formatoActivo === 'LP'){
                 setAmount(album.priceLP * (counter-1));
-            }else{
+            }else if(formatoActivo === 'CD'){
                 setAmount(album.priceCD * (counter-1));
+            }else{
+                setAmount(0);
             }
             setCounter(counter - 1);
         }
@@ -119,6 +123,7 @@ const ItemPage = () => {
                                     <p className="item__album item__album-quantity-number">{counter}</p>
                                     <button className="item__album item__album-quantity-button" onClick={more}>+</button>
                                 </div>
+                                <p className="item__album item__album-option" style={{textAlign:"center", margin:"1rem 0 0 0"}}>Máximo 6 unidades.</p>
                             </div>
                         </div>
                         <div className="item__album-buy-container">
