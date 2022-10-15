@@ -3,32 +3,19 @@ import { Link, useParams } from "react-router-dom";
 import Filter from "../components/store/Filter";
 import { AnimatePresence, motion } from "framer-motion";
 import Album from "../components/store/Album";
+import useAlbums from "../hook/useAlbums";
 
 const StorePage = () => {
-    // Fetch JSON
-    const [albumsData, setAlbumsData] = useState([]);
-    const [filtered, setFiltered] = useState([]);
     const [activeFilter, setActiveFilter] = useState(0);
+    const {albums, getAlbumsData, filtered, setFiltered} = useAlbums();
 
     useEffect(() => {
-        getAlbumsData("https://raw.githubusercontent.com/mariovasquez/ProyectoFinal_G17/develop/src/json/albums.json");
+        getAlbumsData();
     }, [])
 
-    const getAlbumsData = async (url) => {
-        try {
-            const response = await fetch(url);
-            const data = await response.json();
-            setAlbumsData(data);
-            setFiltered(data);
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
-    //Filter
     return (
         <section className="section container__store">
-            <Filter albums={albumsData} setFiltered={setFiltered} activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
+            <Filter albums={albums} setFiltered={setFiltered} activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
             <div className="container__store">
                 <AnimatePresence>
                     {

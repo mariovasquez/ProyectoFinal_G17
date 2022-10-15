@@ -147,14 +147,14 @@
             height: 30vh;
             transition: filter 0.25s;
             position: relative;
-            
-            &:hover{
-                filter: brightness(75%);
-            }
 
             &-img{
                 width: 30vh;
                 height: 30vh;
+
+                &:hover{
+                    filter: brightness(75%);
+                }
             }
         }
     }

@@ -4,12 +4,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { useEffect, useRef, useState } from 'react';
 import SliderFeaturedAlbums from './featured/SliderFeaturedAlbums';
+import useAlbums from '../../hook/useAlbums';
 const Featured = () => {
     const newReleases = useRef();
     const popular = useRef();
     const newReleasesAlbums = useRef();
     const popularAlbums = useRef();
-
 
     const newReleasesClick = () => {
         newReleases.current.classList.add('section__featured-title--selected');
@@ -24,34 +24,10 @@ const Featured = () => {
         popularAlbums.current.classList.remove('container--featured-albums-disabled');
     };
 
-    // Fetch JSON
-    const [newReleasesAlbumsData, setNewReleasesAlbumsData] = useState([]);
-    const [popularAlbumsData, setPopularAlbumsData] = useState([]);
-
+    const {getAlbumsData, newReleasesAlbumsData, popularAlbumsData} = useAlbums();
     useEffect(() => {
-        getAlbumsData("https://raw.githubusercontent.com/mariovasquez/ProyectoFinal_G17/develop/src/json/albums.json");
+        getAlbumsData();
     }, [])
-
-    const getAlbumsData = async (url) => {
-        try {
-            const response = await fetch(url);
-            const data = await response.json();
-            const newReleasesArray = [];
-            const popularArray = [];
-            data.map((element, index) => {
-                if (element.new == 1) {
-                    newReleasesArray.push(element)
-                }
-                if (element.popular == 1) {
-                    popularArray.push(element)
-                }
-            })
-            setNewReleasesAlbumsData(newReleasesArray);
-            setPopularAlbumsData(popularArray);
-        } catch (error) {
-            console.log(error);
-        }
-    }
 
     return (
         <section className="section__featured">

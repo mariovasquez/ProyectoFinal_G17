@@ -8,20 +8,23 @@ import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import StorePage from './pages/StorePage';
 import ItemPage from './pages/ItemPage';
+import { AlbumsProvider } from './context/AlbumsContext';
 
 function App() {
   return (
     <>
+      <AlbumsProvider>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<IndexPage/>}></Route>
+            <Route index element={<IndexPage />}></Route>
             <Route path="about" element={<AboutPage />} />
             <Route path="contact" element={<ContactPage />} />
-            <Route path="store" element={<StorePage/>}/>
-            <Route path="/store/:id" element={<ItemPage/>}></Route>
+            <Route path="store" element={<StorePage />} />
+            <Route path="/store/:id" element={<ItemPage />}></Route>
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>
+      </AlbumsProvider>
     </>
   );
 }

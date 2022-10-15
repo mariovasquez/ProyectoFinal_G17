@@ -1,31 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router";
 import Footer from "../components/sections/Footer";
+import useAlbums from "../hook/useAlbums";
 
 const ItemPage = () => {
-    //--------------------------------Consumir datos del JSON
     const { id } = useParams();
-
-    const [album, setAlbum] = useState([]);
+    const {getAlbumData, album} = useAlbums();
 
     useEffect(() => {
-        getAlbumsData("https://raw.githubusercontent.com/mariovasquez/ProyectoFinal_G17/develop/src/json/albums.json");
+        getAlbumData(id);
     }, [])
-
-    const getAlbumsData = async (url) => {
-        try {
-            const response = await fetch(url);
-            const data = await response.json();
-            data.map((element, index) => {
-                if (element.id == id) {
-                    element.artist = element.artist.toUpperCase();
-                    setAlbum(element);
-                }
-            })
-        } catch (error) {
-            console.log(error);
-        }
-    }
 
     //-----------------------------------Lógica del Dropdown
     const dropdown1 = useRef();

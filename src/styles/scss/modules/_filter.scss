@@ -1,6 +1,7 @@
 .filter {
     &-container {
         display: flex;
+        flex-direction: column;
         gap: 2rem;
     }
 
@@ -16,10 +17,6 @@
         border-radius: var(--primary-border-radius);
         transition: filter 0.25s ease-in-out;
 
-        &:hover {
-            filter: brightness(80%);
-        }
-
         &--active {
             background-color: var(--tertiary-theme-color);
             box-shadow: 0 0 0.125rem 0.25rem var(--tertiary-theme-color);
@@ -31,6 +28,14 @@
             border: none;
             border-radius: var(--primary-border-radius);
             transition: filter 0.25s ease-in-out;
+        }
+    }
+}
+
+@media(min-width: 900px){
+    .filter {
+        &-container {
+            flex-direction: row;
         }
     }
 }
