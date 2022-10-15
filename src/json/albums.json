@@ -159,5 +159,95 @@
         "priceLP": 115,
         "new": 0,
         "popular": 1
+    },
+    {
+        "id": 17,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/MJ_480x.jpg?v=1629199539",
+        "artist": "Michael Jackson",
+        "title": "Bad",
+        "priceCD": 95,
+        "priceLP": 125,
+        "new": 0,
+        "popular": 0
+    },
+    {
+        "id": 18,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/ff_84f76c07-01b5-4348-bdaa-ce06f58fd7df_480x.jpg?v=1665150282",
+        "artist": "Franz Ferdinand",
+        "title": "Franz Ferdinand",
+        "priceCD": 80,
+        "priceLP": 110,
+        "new": 0,
+        "popular": 0
+    },
+    {
+        "id": 19,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/animals1_480x.jpg?v=1656595600",
+        "artist": "Pink Floyd",
+        "title": "Animals",
+        "priceCD": 105,
+        "priceLP": 135,
+        "new": 0,
+        "popular": 0
+    },
+    {
+        "id": 20,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/KC1_aaf8c9ff-ef58-4b4e-b533-c6cef31aebc9_480x.jpg?v=1646915901",
+        "artist": "King Crimson",
+        "title": "Cirkus",
+        "priceCD": 65,
+        "priceLP": 95,
+        "new": 0,
+        "popular": 0
+    },
+    {
+        "id": 21,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Led_Zeppelin_IV_Sister_Ray_480x.jpg?v=1574261754",
+        "artist": "Led Zepellin",
+        "title": "Led Zepellin IV",
+        "priceCD": 75,
+        "priceLP": 110,
+        "new": 0,
+        "popular": 0
+    },
+    {
+        "id": 22,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/thom-yorke-the-eraser-sister-ray_480x.jpg?v=1570377525",
+        "artist": "Thom Yorke",
+        "title": "The Eraser",
+        "priceCD": 80,
+        "priceLP": 120,
+        "new": 0,
+        "popular": 0
+    },
+    {
+        "id": 23,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Joy_Division_Unknown_Pleasures_Sister_Ray_7317a9a7-f436-44fb-9f66-db3f82709992_480x.jpg?v=1575021783",
+        "artist": "Joy Division",
+        "title": "Unknown Pleasures",
+        "priceCD": 55,
+        "priceLP": 85,
+        "new": 0,
+        "popular": 0
+    },
+    {
+        "id": 24,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/Fleetwood-Mac-Rumours-Sister-Ray_360x.jpg",
+        "artist": "Fleetwood Mac",
+        "title": "Rumours",
+        "priceCD": 65,
+        "priceLP": 100,
+        "new": 0,
+        "popular": 0
+    },
+    {
+        "id": 25,
+        "image_url": "https://cdn.shopify.com/s/files/1/0096/1884/9839/products/slowdive_5a1372d9-9123-40ed-9935-09447c1d1641_480x.jpg?v=1629376211",
+        "artist": "Slowdive",
+        "title": "Souvlaki",
+        "priceCD": 85,
+        "priceLP": 115,
+        "new": 0,
+        "popular": 0
     }
 ]

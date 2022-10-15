@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import Filter from "../components/store/Filter";
 
 const StorePage = () => {
     // Fetch JSON
     const [albumsData, setAlbumsData] = useState([]);
+    const [filtered, setFiltered] = useState([]);
+    const [activeFilter, setActiveFilter] = useState(0);
 
     useEffect(() => {
         getAlbumsData("https://raw.githubusercontent.com/mariovasquez/ProyectoFinal_G17/develop/src/json/albums.json");
@@ -14,13 +17,16 @@ const StorePage = () => {
             const response = await fetch(url);
             const data = await response.json();
             setAlbumsData(data);
+            setFiltered(data);
         } catch (error) {
             console.log(error);
         }
     }
-    console.log('GAAAA'+albumsData);
+    
+    //Filter
     return (
-        <section className="section">
+        <section className="section container__store">
+            <Filter albums={albumsData} setFiltered={setFiltered}/>
             <div className="container__store">
             {
                         albumsData.map((element, index) => (

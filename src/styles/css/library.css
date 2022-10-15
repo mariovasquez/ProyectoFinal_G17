@@ -844,7 +844,7 @@
   padding-right: var(--padding-container);
 }
 .container__store {
-  padding: 10vh 0;
+  padding: 7.5rem 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1463,6 +1463,11 @@
 }
 .container__store-album:hover .store__album-button {
   display: block;
+}
+
+.filter-container {
+  display: flex;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=library.css.map */
