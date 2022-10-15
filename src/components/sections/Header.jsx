@@ -81,7 +81,7 @@ const Header = () => {
                         <button className="nav__action nav__action--menu" id="navActionMenu" onClick={openMenu}>
                             <i className="bi bi-list nav__icon"></i>
                         </button>
-                        <ul className="menu menu--header" ref={headerNavMenuLinkList}>
+                        <ul className="menu menu--header" ref={headerNavMenuLinkList} onClick={closeMenu}>
                             <li>
                                 <Link to='/' className="menu__link">INICIO</Link>
                             </li>
