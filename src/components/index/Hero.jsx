@@ -8,6 +8,7 @@ import 'swiper/css/autoplay';
 import heroSliderImg1 from '../../assets/img/Baterista_Slider.jpg';
 import heroSliderImg2 from '../../assets/img/Artik_Monkeys_Slider.jpg';
 import heroSliderImg3 from '../../assets/img/Imagine_Dragon_Slider.jpg';
+import { Link } from 'react-router-dom';
 const Hero = () => {
     return (
         <section className="section section--slider">
@@ -39,7 +40,9 @@ const Hero = () => {
                             <h5 className="slider__title">POST MALONE</h5>
                             <h5 className="slider__title">TWELVE CARAT TOOTHACHE</h5>
                             <div className="slider__buttons">
+                            <Link to="/store/27" className="link">
                                 <button className="item__album-buy-button">Ver artículo</button>
+                            </Link>
                                 {/* <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button> */}
                             </div>
                         </div>
@@ -50,7 +53,9 @@ const Hero = () => {
                             <h5 className="slider__title">NUEVO ALBUM</h5>
                             <h5 className="slider__title">ARTIC MONKEYS</h5>
                             <div className="slider__buttons">
+                                <Link to="/store/26" className="link">
                                 <button className="item__album-buy-button">Ver artículo</button>
+                                </Link>
                                 {/* <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button> */}
                             </div>
                         </div>
@@ -62,7 +67,9 @@ const Hero = () => {
                             <h5 className="slider__title">IMAGINE DRAGONS</h5>
                             <h5 className="slider__title">ORIGINS</h5>
                             <div className="slider__buttons">
+                            <Link to="/store/28" className="link">
                                 <button className="item__album-buy-button">Ver artículo</button>
+                                </Link>
                                 {/* <button className="slider__button-icon"><i className="bi bi-star slider__icon"></i></button> */}
                             </div>
                         </div>
