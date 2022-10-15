@@ -127,17 +127,13 @@
             padding-left: 0.25rem;
         }
 
-        &__list {
-            max-width: 100%;
+        &__list, &__buttons, &__title {
+            max-width: 340px;
         }
         
 
         &__logo{
             margin: 0;
-        }
-
-        &__buttons {
-            max-width: 350px;
         }
 
         &__paragraph {

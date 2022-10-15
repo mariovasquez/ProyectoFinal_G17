@@ -7,7 +7,7 @@ import useAlbums from "../hook/useAlbums";
 
 const StorePage = () => {
     const [activeFilter, setActiveFilter] = useState(0);
-    const {albums, getAlbumsData, filtered, setFiltered} = useAlbums();
+    const { albums, getAlbumsData, filtered, setFiltered } = useAlbums();
 
     useEffect(() => {
         getAlbumsData();

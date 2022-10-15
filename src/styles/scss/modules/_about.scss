@@ -139,5 +139,13 @@
 
     .valor {
         grid-template-columns: repeat(1, 1fr);
+        
+            &__item {
+                &-paragraph {
+                    font-size: 1rem;
+                    text-align: center;
+                    max-width: 360px;
+                }
+            }
     }
 }
