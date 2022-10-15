@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Filter from "../components/store/Filter";
+import { motion, AnimatePresence } from "framer-motion";
 
 const StorePage = () => {
     // Fetch JSON
@@ -22,28 +23,29 @@ const StorePage = () => {
             console.log(error);
         }
     }
-    
+
     //Filter
     return (
         <section className="section container__store">
-            <Filter albums={albumsData} setFiltered={setFiltered}/>
-            <div className="container__store">
-            {
-                        albumsData.map((element, index) => (
-                                <div className="container__store-album" data-key={index}>
-                                    <Link to={`/store/${element.id}`} className="link">
-                                        {/* <div className="container__album"> */}
-                                        <button className="item__album-buy-button store__album-button">Ver artículo</button>
-                                            <img src={element.image_url} alt="" className="container__store-album-img"/>
-                                            {console.log(element)}
-                                        {/* </div> */}
-                                    </Link>
-                                </div>
+            <Filter albums={albumsData} setFiltered={setFiltered} activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
+            <motion.div layout className="container__store">
+                <AnimatePresence>
+                    {
+                        filtered.map((element, index) => (
+                            <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} className="container__store-album" data-key={index}>
+                                <Link to={`/store/${element.id}`} className="link">
+                                    {/* <div className="container__album"> */}
+                                    <button className="item__album-buy-button store__album-button">Ver artículo</button>
+                                    <img src={element.image_url} alt="" className="container__store-album-img" />
+                                    {/* </div> */}
+                                </Link>
+                            </motion.div>
                         ))
                     }
-            </div>
+                </AnimatePresence>
+            </motion.div>
         </section>
     );
 }
- 
+
 export default StorePage;

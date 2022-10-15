@@ -10,6 +10,7 @@
     "aos": "^2.3.4",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.1",
+    "framer-motion": "^7.5.3",
     "google-map-react": "^2.2.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",

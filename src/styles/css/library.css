@@ -1467,7 +1467,34 @@
 
 .filter-container {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+}
+.filter-button {
+  background-color: transparent;
+  box-shadow: 0 0 0.125rem 0.25rem var(--tertiary-theme-color);
+  width: 16rem;
+  height: 3rem;
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  font-weight: 900;
+  border: none;
+  border-radius: var(--primary-border-radius);
+  transition: filter 0.25s ease-in-out;
+}
+.filter-button:hover {
+  filter: brightness(80%);
+}
+.filter-button--active {
+  background-color: var(--tertiary-theme-color);
+  box-shadow: 0 0 0.125rem 0.25rem var(--tertiary-theme-color);
+  width: 16rem;
+  height: 3rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  border: none;
+  border-radius: var(--primary-border-radius);
+  transition: filter 0.25s ease-in-out;
 }
 
 /*# sourceMappingURL=library.css.map */
