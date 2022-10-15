@@ -12,7 +12,6 @@ import ItemPage from './pages/ItemPage';
 function App() {
   return (
     <>
-      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<IndexPage/>}></Route>
@@ -23,7 +22,6 @@ function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>
-      </BrowserRouter>
     </>
   );
 }

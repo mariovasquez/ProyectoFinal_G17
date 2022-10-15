@@ -249,5 +249,35 @@
         "priceLP": 115,
         "new": 1,
         "popular": 0
+    },
+    {
+        "id": 26,
+        "image_url": "https://arcticmonkeys.com/wp-content/uploads/2022/08/packshot.jpeg",
+        "artist": "Arctic Monkeys",
+        "title": "The Car",
+        "priceCD": 105,
+        "priceLP": 155,
+        "new": 1,
+        "popular": 0
+    },
+    {
+        "id": 27,
+        "image_url": "https://media.pitchfork.com/photos/627d300ec2ce40433b34b820/1:1/w_320,c_limit/Post-Malone-Twelve-Carat-Toothache.jpg",
+        "artist": "Post Malone",
+        "title": "Twelve Carat Toothache",
+        "priceCD": 100,
+        "priceLP": 145,
+        "new": 1,
+        "popular": 0
+    },
+    {
+        "id": 28,
+        "image_url": "https://i.scdn.co/image/ab67616d00001e02da6f73a25f4c79d0e6b4a8bd",
+        "artist": "Imagine Dragons",
+        "title": "Origins",
+        "priceCD": 90,
+        "priceLP": 125,
+        "new": 1,
+        "popular": 1
     }
 ]
