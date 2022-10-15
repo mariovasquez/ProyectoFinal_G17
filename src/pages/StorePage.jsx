@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Filter from "../components/store/Filter";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import Album from "../components/store/Album";
 
 const StorePage = () => {
     // Fetch JSON
@@ -28,22 +29,28 @@ const StorePage = () => {
     return (
         <section className="section container__store">
             <Filter albums={albumsData} setFiltered={setFiltered} activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
-            <motion.div layout className="container__store">
+            <div className="container__store">
                 <AnimatePresence>
                     {
                         filtered.map((element, index) => (
-                            <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} className="container__store-album" data-key={index}>
+                            <motion.div
+                                className="container__store-album"
+                                key={element.id}
+                                layout
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.4 }}
+                            >
                                 <Link to={`/store/${element.id}`} className="link">
-                                    {/* <div className="container__album"> */}
                                     <button className="item__album-buy-button store__album-button">Ver artículo</button>
                                     <img src={element.image_url} alt="" className="container__store-album-img" />
-                                    {/* </div> */}
                                 </Link>
                             </motion.div>
                         ))
                     }
                 </AnimatePresence>
-            </motion.div>
+            </div>
         </section>
     );
 }
