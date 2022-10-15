@@ -5,7 +5,7 @@ import useAlbums from "../hook/useAlbums";
 
 const ItemPage = () => {
     const { id } = useParams();
-    const {getAlbumData, album} = useAlbums();
+    const { getAlbumData, album } = useAlbums();
 
     useEffect(() => {
         getAlbumData(id);
@@ -47,12 +47,12 @@ const ItemPage = () => {
     const [amount, setAmount] = useState(0);
 
     const more = () => {
-        if(counter<6){
-            if(formatoActivo === 'LP'){
-                setAmount(album.priceLP * (counter+1));
-            }else if(formatoActivo === 'CD'){
-                setAmount(album.priceCD * (counter+1));
-            }else{
+        if (counter < 6) {
+            if (formatoActivo === 'LP') {
+                setAmount(album.priceLP * (counter + 1));
+            } else if (formatoActivo === 'CD') {
+                setAmount(album.priceCD * (counter + 1));
+            } else {
                 setAmount(0);
             }
             setCounter(counter + 1);
@@ -60,12 +60,12 @@ const ItemPage = () => {
     }
 
     const less = () => {
-        if(counter>1){
-            if(formatoActivo === 'LP'){
-                setAmount(album.priceLP * (counter-1));
-            }else if(formatoActivo === 'CD'){
-                setAmount(album.priceCD * (counter-1));
-            }else{
+        if (counter > 1) {
+            if (formatoActivo === 'LP') {
+                setAmount(album.priceLP * (counter - 1));
+            } else if (formatoActivo === 'CD') {
+                setAmount(album.priceCD * (counter - 1));
+            } else {
                 setAmount(0);
             }
             setCounter(counter - 1);
@@ -107,14 +107,20 @@ const ItemPage = () => {
                                     <p className="item__album item__album-quantity-number">{counter}</p>
                                     <button className="item__album item__album-quantity-button" onClick={more}>+</button>
                                 </div>
-                                <p className="item__album item__album-option" style={{textAlign:"center", margin:"1rem 0 0 0"}}>Máximo 6 unidades.</p>
+                                <p className="item__album item__album-option" style={{ textAlign: "center", margin: "1rem 0 0 0" }}>Máximo 6 unidades.</p>
                             </div>
                         </div>
                         <div className="item__album-buy-container">
                             <p className="item__album-buy-price">S/{amount}</p>
                             <div style={{ display: "flex", gap: '2rem' }}>
-                                <button className="item__album-buy-button">COMPRAR</button>
-                                <button className="item__album-buy-cart"><i class="bi bi-cart"></i></button>
+                                <a
+                                    className="item__album-buy-button"
+                                    style={{textDecoration:'none', textAlign:'center', margin:'0', color:'white', padding:'0.75rem 0'}}
+                                    href={`https://wa.me/51957144018?text=Deseo%20adquirir%20el%20siguiente%20articulo: Album: ${album.title}, Artista: ${album.artist}, Formato: ${formatoActivo}, Cantidad: ${counter}, Precio: S/${amount}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >COMPRAR</a>
+                                {/* <button className="item__album-buy-cart"><i class="bi bi-cart"></i></button> */}
                             </div>
                         </div>
                     </div>

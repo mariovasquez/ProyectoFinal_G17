@@ -24,7 +24,7 @@
         transform: var(--translate-x-menu);
         transition: transform 0.25s;
     }
-    
+
     &__link {
         position: relative;
         display: flex;
@@ -36,12 +36,9 @@
         transition: color 0.25s;
         transition: transform 0.25s;
 
-        &:hover {
+        &:hover,
+        &--active {
             color: #fff;
-
-            &::before {
-                width: 100%;
-            }
         }
         
         &::before {
@@ -54,6 +51,11 @@
             background-color: white;
             transition: width 0.25s ease-in-out;
         }
+        
+        &:hover::before,
+        &--active::before {
+            width: 100%;
+        }
     }
 }
 
@@ -61,8 +63,8 @@
     color: white;
 }
 
-@media(min-width: 940px){
-    .menu{
+@media(min-width: 940px) {
+    .menu {
         position: static;
         width: auto;
         height: auto;

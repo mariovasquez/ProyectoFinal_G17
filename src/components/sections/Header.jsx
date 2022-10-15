@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { BrowserRouter, Routes, Link, Route, useSearchParams, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Link, Route, useSearchParams, useLocation, NavLink } from "react-router-dom";
 import '../../styles/css/library.css';
 import logo from '../../assets/svg/Logo_Vao.svg';
 
@@ -83,16 +83,16 @@ const Header = () => {
                         </button>
                         <ul className="menu menu--header" ref={headerNavMenuLinkList} onClick={closeMenu}>
                             <li>
-                                <Link to='/' className="menu__link">INICIO</Link>
+                                <NavLink to='/' className={({ isActive }) => isActive ? "menu__link menu__link--active" : "menu__link"} end>INICIO</NavLink>
                             </li>
                             <li>
-                                <Link to='/store' className="menu__link">TIENDA</Link>
+                                <NavLink to='/store' className={({ isActive }) => isActive ? "menu__link menu__link--active" : "menu__link"} end>TIENDA</NavLink>
                             </li>
                             <li>
-                                <Link to='/about' className="menu__link">NOSOTROS</Link>
+                                <NavLink to='/about' className={({ isActive }) => isActive ? "menu__link menu__link--active" : "menu__link"} end>NOSOTROS</NavLink>
                             </li>
                             <li>
-                                <Link to='/contact' className="menu__link">CONTACTO</Link>
+                                <NavLink to='/contact' className={({ isActive }) => isActive ? "menu__link menu__link--active" : "menu__link"} end>CONTACTO</NavLink>
                             </li>
                             <li className="nav__action nav__action--close" id="navActionClose" onClick={closeMenu}>
                                 <i className="bi bi-x-circle"></i>

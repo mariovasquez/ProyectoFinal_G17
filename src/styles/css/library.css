@@ -692,11 +692,8 @@
   transition: color 0.25s;
   transition: transform 0.25s;
 }
-.menu__link:hover {
+.menu__link:hover, .menu__link--active {
   color: #fff;
-}
-.menu__link:hover::before {
-  width: 100%;
 }
 .menu__link::before {
   content: "";
@@ -707,6 +704,9 @@
   height: 0.0625rem;
   background-color: white;
   transition: width 0.25s ease-in-out;
+}
+.menu__link:hover::before, .menu__link--active::before {
+  width: 100%;
 }
 
 .nav__icon {
