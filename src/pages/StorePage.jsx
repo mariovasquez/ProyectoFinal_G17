@@ -13,10 +13,6 @@ const StorePage = () => {
         try {
             const response = await fetch(url);
             const data = await response.json();
-            const albumsArray = [];
-            // data.map((element, index) => {
-            //         albumsArray.push(element)
-            // })
             setAlbumsData(data);
         } catch (error) {
             console.log(error);
@@ -28,12 +24,13 @@ const StorePage = () => {
             <div className="container__store">
             {
                         albumsData.map((element, index) => (
-                                <div className="section__featured-album-container" data-key={index}>
+                                <div className="container__store-album" data-key={index}>
                                     <Link to={`/store/${element.id}`} className="link">
-                                        <div className="container__album">
-                                            <img src={element.image_url} alt="" />
+                                        {/* <div className="container__album"> */}
+                                        <button className="item__album-buy-button store__album-button">Ver artículo</button>
+                                            <img src={element.image_url} alt="" className="container__store-album-img"/>
                                             {console.log(element)}
-                                        </div>
+                                        {/* </div> */}
                                     </Link>
                                 </div>
                         ))

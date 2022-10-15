@@ -135,6 +135,30 @@
     padding-left: var(--padding-container);
     padding-right: var(--padding-container);
 
+    &__store{
+        padding: 10vh 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        &-album{
+            width: 30vh;
+            height: 30vh;
+            transition: filter 0.25s;
+            position: relative;
+            
+            &:hover{
+                filter: brightness(75%);
+            }
+
+            &-img{
+                width: 30vh;
+                height: 30vh;
+            }
+        }
+    }
+
     &--nav-r {
         display: flex;
         align-items: center;

@@ -843,6 +843,26 @@
   padding-left: var(--padding-container);
   padding-right: var(--padding-container);
 }
+.container__store {
+  padding: 10vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.container__store-album {
+  width: 30vh;
+  height: 30vh;
+  transition: filter 0.25s;
+  position: relative;
+}
+.container__store-album:hover {
+  filter: brightness(75%);
+}
+.container__store-album-img {
+  width: 30vh;
+  height: 30vh;
+}
 .container--nav-r {
   display: flex;
   align-items: center;
@@ -1429,6 +1449,20 @@
   width: 100vw;
   justify-content: center;
   align-items: center;
+}
+
+.store__album-button {
+  position: absolute;
+  top: calc(50% - 3vh);
+  left: calc(50% - 8vh);
+  width: 16vh;
+  height: 3vh;
+  display: none;
+  z-index: 25;
+  filter: brightness(125%);
+}
+.container__store-album:hover .store__album-button {
+  display: block;
 }
 
 /*# sourceMappingURL=library.css.map */

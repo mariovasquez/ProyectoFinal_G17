@@ -21,7 +21,8 @@ const Accordion = () => {
                 <Collapsible 
                   className="Collapsible"
                   trigger = {[<i class="bi bi-chevron-down"></i>, detail.question]}
-                  triggerWhenOpen = {[<i class="bi bi-chevron-up"></i>, detail.question]}>
+                  triggerWhenOpen = {[<i class="bi bi-chevron-up"></i>, detail.question]}
+                  transitionTime = {350}>
                     <p className="content-show">
                       {detail.answer}
                     </p>

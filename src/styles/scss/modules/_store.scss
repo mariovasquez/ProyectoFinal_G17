@@ -1,0 +1,16 @@
+.store{
+    &__album-button{
+        position: absolute;
+        top: calc(50% - 3vh);
+        left:calc(50% - 8vh);
+        width: 16vh;
+        height: 3vh;
+        display: none;
+        z-index: 25;
+        filter: brightness(125%);
+
+        .container__store-album:hover &{
+            display: block;
+        }
+    }
+}
