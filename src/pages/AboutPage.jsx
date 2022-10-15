@@ -1,12 +1,12 @@
 import Accordion from "../components/nosotros/Accordion";
 import VaoIMG from "../assets/img/Vao_Music.jpg";
-
+import 'animate.css';
 
 const AboutPage = () => {
     return (
         <>
-            <article className="section section--about">
-                <h2 className="about__title">Sobre Nosotros</h2>
+            <article className="section section--about animate__animated animate__zoomIn">
+                <h2 className="about__title ">Sobre Nosotros</h2>
                 <div className="about__info">
                     <div className="about__text">
                         <div className="about__text--container">
@@ -43,7 +43,7 @@ const AboutPage = () => {
                         </div>
                     </section>
 
-                    <Accordion />
+                    <Accordion  />
 
                 </div>
             </article>
