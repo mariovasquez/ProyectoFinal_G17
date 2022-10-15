@@ -2,6 +2,7 @@ import Hero from '../components/index/Hero';
 import News from '../components/index/News';
 import Featured from '../components/index/Featured';
 import Counter from '../components/index/Counter';
+import 'animate.css';
 
 
 const IndexPage = () => {

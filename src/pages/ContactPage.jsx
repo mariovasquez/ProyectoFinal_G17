@@ -1,11 +1,12 @@
-import Footer from '../components/sections/Footer';
 import ContactImg from '../assets/img/hero.jpg'
 import Form from '../components/contact/Form';
+import 'animate.css';
+
 
 const ContactPage = () => {
     return (
         <>
-        <article className="section contact">
+        <article className="section contact animate__animated animate__zoomIn">
             <div className="container">
                 <div className="contact__wrapper">
                 <Form/>
