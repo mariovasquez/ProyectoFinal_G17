@@ -4,7 +4,6 @@
 ## Integrantes
 * [Carlos Polanco](https://github.com/capolancoz)
 * [Mario Vásquez](https://github.com/mariovasquez)
-* [Omar Ruizz](https://github.com/#)
 
 ## Tecnologías utilizadas
 <table>
